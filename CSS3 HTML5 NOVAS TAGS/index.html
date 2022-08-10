@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos do html</title>
+</head>
+   <style>
+       body{
+           background-color: aquamarine;
+       }
+   </style>
+<body>
+    <header>
+        <ul>
+            <li><a href="#"></a>home</li>
+            <li><a href="#"></a>Produto</li>
+            <li><a href="#"></a>Contato</li>
+        </ul>
+    </header>
+    <article>
+    <h1>Recursos do html</h1>
+    <div>
+        <video width="300" height="200" controls>
+            <source src="video/cidade.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div>
+        <!--audio comcontrole-->
+        <audio controls>
+            <source src="audio/music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div>
+        <!--imagem com capitulo-->
+        <figure>
+            <img src="img/ricefield.jpg" alt="Campo de Arroz">
+            <figcaption>Um lindo campo de arroz</figcaption>
+        </figure>
+    </div>
+    <div>
+        <h3>Preencha o Formulario para receber novidades!</h3>
+        <form action="">
+            <label>E-mail:</label>
+            <!--required obriga preenche o formulario-->
+            <!--Placeholder é pra colocar uma dica para o usuario-->
+            <input type="email" name="email" required placeholder="Digite seu melhor e-mail" autofocus>
+            <!--Type="email" valida email tambem o autofocus-->
+           
+            <label>Nome:</label>
+            <input type="text" name="name" required placeholder="Digite seu Nome Completo">
+            <input type="submit" name="Enviar">
+        </form>
+    </div>
+    <div>
+        <!--contenteditable edita em tempo real-->
+        <p contenteditable="true">Este é um paragrafo que pode ser editado.</p>
+    </div>
+    </article>  
+    <aside>
+        <p>Confira nossos produtos,<a href="#">Clicando aqui</a></p>
+    </aside>
+    <!--Escode o paragrafo na seta details summary-->
+    <details open="open">
+        <summary>gato</summary>
+        <p>umcachorro quatro patas</p>
+    </details>
+    <details open="open">
+        <summary>gato</summary>
+        <p>umcachorro quatro patas</p>
+        <!--Criar lista com Opçao DATALIST-->
+    </details>
+    <form>
+        <p>Animais</p>
+        <input list="animais" name="animal">
+        <datalist id="animais">
+            <option value="Cachorro"></option>
+            <option value="Cato"></option>
+            <option value="Cavalo"></option>
+            </datalist>
+    </form>
+    <!--Barra de Carregamento-->
+    <p>Barra de Loading</p>
+    <progress value="63" max="100">
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+</body>
+</html>

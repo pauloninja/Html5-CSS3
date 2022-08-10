@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <form method="post" action="form.php">
+          <div class="form-group">
+              <label for="">Nome</label>
+              <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required>
+          </div>
+          <div>
+            <label for="">Email</label>
+            <input type="text" name="email" id="email" class="form-control" placeholder="seu@email.com.br" required>
+        </div>
+        <div class="form-group">
+            <label for="nascimento">Nascimento</label>
+            <input type="date" name="nascimento" id="nascimento" class="form-control" placeholder="Digite seu nome" required min="2021-01-01"> <!--min desabilida data pra tras-->
+        </div>
+        <div class="form-group">
+            <label>Sexo</label>
+            <input type="radio" name="sexo" id="masculino">
+            <label for="masculino">Maculino</label>
+            <input type="radio" name="sexo" id="feminino">
+            <label for="feminino">Feminino</label>
+        </div><!--Para formulario de tipo sexo-->
+        <div class="form-group">
+            <label for="li">Li o contrato</label><!--quradrado pramarca check-box--> 
+            <input type="checkbox" name="li" id="li" required> <!--SE COLOCAR  REQUIRED CHECKED FICA MARCADO-->
+        </div>
+        <div class="form-group">
+            <label for="volume">volume</label><!--quradrado pramarca check-box--> 
+            <input type="range" name="volume" id="volume"min="0" max="100" value="25"> <!--vOLUME-->
+        </div>
+        <div class="form-group">
+            <label for="meter">Bateria</label><!--para bateria low=15 chegou abaixo desse valor abaixa a com pra amarelo-->
+            <meter name="meter" min="0" max="100" low="15" value="12">12</meter>
+        </div>
+        <div class="form-group">
+            <label for="meter">Carregando</label><!--carregador-->
+            <progress min="0" max="100" value="60">60%</progress>
+        </div>
+        <div>
+            <label ano="ano">Ano Fabricação</label>
+            <input type="number" name="ano" id="ano" min="1920" step="20" max="2016" value="2016" class="form-control" placeholder="seu@email.com.br" required>
+        </div>
+        <div>
+            <label for="cor"></label>
+            <input type="color" name="cor" id="cor" class="form-control">
+        </div>
+        <div>
+            <label for="url">Url</label>
+            <input type="url" name="url" id="url" class="form-control">
+        </div>
+        <div>
+            <label for="url"></label>
+            <input type="search" name="busca" id="busca" class="form-control">
+        </div>
+        <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="estados">Estado</label>
+            <select name="estados" id="estados">
+                <option value="SP">são Paulo</option>
+                <option value="MG">Minas Gerais</option><!--depois de minas gerais Selected seleciona minas em todos-->
+                <option value="Bahia">salvador</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="estados">Estado</label>
+            <select name="estados" id="estados" multiple="3">
+                <optgroup label="Sudeste">
+                    <option value="SP">são Paulo</option>
+                    <option value="MG">Minas Gerais</option><!--depois de minas gerais Selected seleciona minas em todos-->
+                    <option value="Bahia">salvador</option>
+            </optgroup>
+            <optgroup label="Sul">
+                <option value="Para">parana</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Acre">Manaus</option>
+            </optgroup>
+            </select>
+        </div>
+        <input type="hidden" name="id" value="1">
+
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha"id="senha" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="mes">Mes</label>
+            <input type="month" name="mes"id="mes" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="semana">Semana</label>
+            <input type="week" name="semana"id="semana" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="hora">Hora</label>
+            <input type="time" name="hora"id="hora" class="form-control">
+        </div>
+
+        <div>
+            <input type="text" list="navegadores">
+            <datalist id="navegadores">
+                <option value="Crome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+            </datalist>
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+      </form>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

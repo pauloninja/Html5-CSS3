@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="contato.php">
+        <div class="form-group">
+            <label for="">Nome</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome" required>
+        </div>
+    </form>
+
+    <form method="post" action="form.php">
+        <div class="form-group">
+            <label for="">Nome</label>
+            <input type="text" id="name" class="form-control" placeholder="Digite seu nome" required>
+        </div>
+    </form>
+
+    <div class="form-group">
+        <label>E-mail</label>
+        <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu nome email" required>
+    </div>
+
+    <div>
+        <label>Sexo</label>
+        <input type="radio" name="sexo" id="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio"name="sexo" id="Feminino">
+        <label for="feminino">Feminino</label>
+    </div>
+
+    <div class="form-group">
+        <label for="nascimento">Nascimento</label>
+        <input type="date" name="nascimento" id="nascimento" class="form-control" placeholder="Digite seu " required>
+    </div>
+
+    <div class="form-group">
+        <label for="volume">volume</label>
+        <input type="range" name="volume" id="volume" min="0" max="100" value="25">
+    </div>
+
+    <div class="form-group">
+        <label for="meter">Bateria</label>
+        <meter name="meter" min="0" max="100" low="15" value="12">12</meter>
+    </div>
+
+    <div class="form-group">
+        <label for="meter">Carregador</label>
+        <progress min="0" max="100" value="60">60%</progress>
+    </div>
+
+    <div>
+        <label for="ano">Ano de Fabricação</label>
+        <input type="number" name="ano" id="ano" min="1920" step="20" max="2016" value="2016" class="form-control" placeholder="Digite seu email " required>
+    </div>
+
+    <div class="form-group">
+        <label for="cor">Color</label>
+        <input type="color" name="color" id="cor" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="url">Url</label>
+        <input type="url" name="buscar" id="url" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+        <label for="estados">Estados</label>
+        <select name="estados" id="estados">
+            <option value="sp">são paulo</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="bh">salvador</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="Estados">Estados</label>
+        <select name="estados" id="estados">
+            <optgroup label="Sudeste">
+                <option value="sp">são paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="bh">salvador</option>
+            </optgroup>
+            <optgroup label="Sul">
+                <option value="sp">são paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="bh">salvador</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </div>
+
+    <input type="hidden" name="id" value="1">
+
+    <div class="form-control">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" class="form-control">
+    </div>
+
+    <div class="form-control">
+        <label for="mes">Mês</label>
+        <input type="month" name="mes" id="mes" class="form-control">
+    </div>
+
+    <div class="form-control">
+        <label for="semana">Semana</label>
+        <input type="week" name="semana" id="semana" class="form-control">
+    </div>
+
+    <div class="form-control">
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora" class="form-control">
+    </div>
+
+    <div>
+        <input type="text" list="navegador">
+        <datalist id="navegadores">
+            <option value="Crome"></option>
+            <option value="Fire-fox"></option>
+            <option value="Safari"></option>
+            <option value="Edge"></option>
+        </datalist>
+    </div>
+    <section id="visita">
+        <h4>Faça uma Visita</h4>
+        <form action="">
+            <fieldset>
+                <legend>Selecione Uma Data</legend>
+
+                <label for="data">Data</label>
+                <input type="text" id="data" value="dd/mm/aaaa">
+
+                <label for="qtd">Qtd pessoas</label>
+                <input type="text" id="qtd" value="1">
+
+            </fieldset>
+
+            <input type="submit" value="Verificar disponibilidade" >
+        </form>
+    </section>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra-de-naegaçao</title>
+    <style>
+       /* ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            padding: 10px 20px;
+            background-image: url('img/seta.png');
+            background-repeat: no-repeat;
+            background-position: left center;
+        }*/
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul a{
+            width: 200px;
+            height: 40px;
+            color: black;
+            text-decoration: none;
+            text-indent: 40px;
+            line-height: 40px;
+            display: block;/* usar display block para dar centro*/
+            background-image: url('img/menu.png');
+            background-color: black; /* caso a imagem nao carregue*/
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            
+        }
+
+        a:hover,{ /*selecionado a Para fica selecionado muito usado com linguagem*/
+            background-position: right bottom;
+            background-color: red;/* caso a imagem nao carregue*/
+            color: #fff;
+        }
+
+        #home .home a{
+            background-position: right bottom;
+            background-color: red;/* caso a imagem nao carregue*/
+            color: #fff; 
+        }
+        
+    </style>
+</head>
+<body id="home">
+    <h2>Home</h2>
+    <ul id="navegação">
+        <li class="home">
+            <a href="#">Home</a>
+        </li><!--class="selecionado"para ficar selecionado-->
+        <li class="Sobre">
+            <a href="#">Sobre</a>
+        </li>
+        <li class="Serviços">
+            <a href="#">Serviços</a>
+        </li>
+        <li class="Noticias">
+            <a href="#">Noticias</a>
+        </li>
+        <li class="Contatos">
+            <a href="#">Contatos</a>
+        </li>
+    </ul>
+   
+   <!--<h1>Lista de Atividades</h1>
+    <ul>
+        <li>lR ao dentista</li>
+        <li>lR ao mercado</li>
+        <li>lR ao banco</li>
+        <li>lR na Loja</li>
+    </ul>-->
+    
+</body>
+</html>
